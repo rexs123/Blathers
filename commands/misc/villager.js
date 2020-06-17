@@ -25,7 +25,7 @@ exports.run = (client, message, args) => {
     .addField(`Species`, Villager.species, true)
     .addField(`Birthday`, Villager.birthday, true)
     .addField(`Sign`, Villager.sign, true)
-    .addField(`Phrase`, Villager.phrase, true)
+    .addField(`Hobby`, Villager.hobbies, true)
     .addField(`Phrase`, Villager.phrase, true)
     .setThumbnail(Villager.portrait)
     .setFooter(`Information collected from Nocookie Wiki, by Jay & Kay <3`, null)
