@@ -18,7 +18,6 @@ exports.run = (client, message, [command], level) => {
 			}
 			output += `${client.prefix}${c.help.name}${' '.repeat(longest - c.help.name.length)} :: ${c.help.description}\n`;
 		});
-		output += `\n= Join the Support Server =\nhttps://discord.gg/z6uApMZ`;
 		return message.author.send(output, { code: 'asciidoc', split: { char: '\u200b' } }).catch(() => { return message.reply("Please unblock your DMs so I can send you the help commands.") });
 	} else if (client.commands.has(command) || client.aliases.has(command)) {
 		const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));

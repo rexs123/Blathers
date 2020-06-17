@@ -26,9 +26,9 @@ exports.run = (client, message, args) => {
     .addField(`Birthday`, Villager.birthday, true)
     .addField(`Sign`, Villager.sign, true)
     .addField(`Phrase`, Villager.phrase, true)
+    .addField(`Phrase`, Villager.phrase, true)
     .setThumbnail(Villager.portrait)
-    // .setImage(Villager.image)
-    .setFooter(`Info from Fandom WIKI | ;invite to add Blathers to your server`, null)
+    .setFooter(`Information collected from Nocookie Wiki, by Jay & Kay <3`, null)
     .setColor(client.getRandomColor());
   return message.channel.send(embed);
 }

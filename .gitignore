@@ -4,9 +4,7 @@
 node_modules/
 FAQ.txt
 config.js
-users.sqlite
 users.sqlite-wal
 users.sqlite-shm
-database.sqlite
 package-lock.json
 channel-text.psd
