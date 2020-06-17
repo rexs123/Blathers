@@ -21,35 +21,6 @@ module.exports = async (client, message) => {
 		return message.reply(`Hey there! My prefix is \`${client.prefix}\`. Use the \`${client.prefix}help\` command to find out more about me!`);
 	}
 
-	// Start Leveling
-	if (message.content.indexOf(client.prefix) !== 0) {
-		let score;
-		score = client.getScore.get(message.author.id, message.guild.id);
-		if (!score) {
-			score = {
-				id: `${message.guild.id}-${message.author.id}`,
-				user: message.author.id,
-				guild: message.guild.id,
-				name: message.author.username,
-				points: 0,
-				level: 1
-			};
-		}
-		score.name = message.author.username;
-		score.points++;
-		const curLevel = Math.floor(0.2 * Math.sqrt(score.points));
-		if (score.level < curLevel) {
-			score.level++;
-			if (Guild_Settings.lvl_up === 'true') {
-				embed = new Discord.MessageEmbed()
-					.setDescription(`<@${message.author.id}>, You've leveled up to level **${curLevel}**! Ain't that dandy? ${client.emoji.leafGlow}`)
-					.setColor(client.getRandomColor());
-				message.channel.send(embed);
-			}
-		}
-		return client.setScore.run(score);
-	}
-
 	//Start Command Lookup
 	const level = client.permLevel(message);
 	const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
