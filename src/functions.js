@@ -97,8 +97,8 @@ module.exports = (client) => {
       const currentlvl = permOrder.shift();
 
       if (currentlvl.check(client, message)) {
-        permName = currentlvl.name;
-        permlvl = currentlvl.level;
+        permName = 'User';
+        permlvl = 0;
         break;
       }
     }
