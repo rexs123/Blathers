@@ -67,7 +67,5 @@ for (let i = 0; i < config.permLevels.length; i++) {
 	client.levelCache[thislvl.name] = thislvl.level;
 }
 
-global.sentTrivia = new Set();
-
 // Discord Login
 client.login(config.token);
