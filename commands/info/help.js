@@ -42,7 +42,7 @@ module.exports.conf = {
 	enabled: true,
 	aliases: [],
 	permLevel: 'User',
-	cooldown: 10
+	cooldown: 1
 };
 
 module.exports.help = {
