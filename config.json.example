@@ -1,4 +1,14 @@
 {
   "token": "",
-  "permLevels": 0
+  "permLevels": [
+    {
+      "level": 0,
+      "name": "User"
+    },
+    {
+      "level": 10,
+      "name": "Mod"
+    }
+  ],
+ "prefix": "~"
 }
