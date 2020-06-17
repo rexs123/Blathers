@@ -8,3 +8,4 @@ users.sqlite-wal
 users.sqlite-shm
 package-lock.json
 channel-text.psd
+users.sqlite
