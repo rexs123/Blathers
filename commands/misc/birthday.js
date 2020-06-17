@@ -59,7 +59,7 @@ module.exports.conf = {
 	enabled: true,
 	aliases: ['bday'],
 	permLevel: 'User',
-	cooldown: 10
+	cooldown: 1
 };
 
 module.exports.help = {
