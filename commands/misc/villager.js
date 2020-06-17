@@ -25,10 +25,10 @@ exports.run = (client, message, args) => {
     .addField(`Species`, Villager.species, true)
     .addField(`Birthday`, Villager.birthday, true)
     .addField(`Sign`, Villager.sign, true)
-    // .addField(`Hobby`, Villager.hobbies, true)
+    .addField(`Hobby`, Villager.hobby, true)
     .addField(`Phrase`, Villager.phrase, true)
     .setThumbnail(Villager.portrait)
-    .setFooter(`Information collected from Nocookie Wiki, by Jay & Kay <3`, null)
+    .setFooter(`Information collected from Nocookie Wiki, by Jay221b & Kay <3`, null)
     .setColor(client.getRandomColor());
   return message.channel.send(embed);
 }
