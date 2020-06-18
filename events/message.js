@@ -23,7 +23,7 @@ module.exports = async (client, message) => {
 	const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
 	const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
-	if (!cmd) return;
+	if(message.content.startsWith(client.prefix) === false) return;
 
 	// Check If Commands Disabled
 	if (cmd.conf.enabled === false) {
