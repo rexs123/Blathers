@@ -7,14 +7,11 @@ module.exports = async (client, message) => {
 	Guild_Settings = client.getSetting.get(message.guild.id);
 	// If Guild has no settings in DB
 	if (!Guild_Settings) {
-		Guild_Settings = { id: message.guild.id, lvl_up: 'false', prefix: null, music_channel: null, misc_channel: null, fun_channel: null };
+		Guild_Settings = { id: message.guild.id, lvl_up: 'false', prefix: '~', music_channel: null, misc_channel: null, fun_channel: null };
 		client.setSetting.run(Guild_Settings);
 	}
 	// Check for custom Prefix
-	if (Guild_Settings.prefix != null) {
-		client.prefix = Guild_Settings.prefix;
-	} else
-		client.prefix = client.config.prefix;
+	client.prefix = client.config.prefix;
 	//Bot is Mentioned
 	if (message.mentions.has(client.user)) {
 		if (message.mentions.everyone) return;
