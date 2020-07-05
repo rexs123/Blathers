@@ -16,13 +16,13 @@ module.exports = async (client, message) => {
 	if (message.mentions.has(client.user)) {
 		if (message.mentions.everyone) return;
 		return message.reply(
-			'Hey, how can I help you today?' +
+			'Hey there! I offer a lot of commands, to help you remember here is a list of my prefixes' +
 			'```' +
 			'q! # Event queue commands \n' +
-			'^  # Backup music bot \n' +
+			'^  # Secondary music bot \n' +
 			'~  # Villager lookup \n' +
 			'``` \n' +
-			'To contact staff, message our <@531163728553574400>.'
+			'If you need help or want to contact staff, direct message <@531163728553574400> and staff will get back to you shortly.'
 		);
 	}
 
