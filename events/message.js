@@ -18,10 +18,10 @@ module.exports = async (client, message) => {
 		return message.reply(
 			'Hey! what can I help you to do today?' +
 			'```' +
-			'q! # All event queues and event queueing related commands ' +
-			'^  # Backup music bot' +
-			'~  # Villager lookup' +
-			'```' +
+			'q! # All event queues and event queueing related commands \n\r' +
+			'^  # Backup music bot \n\r' +
+			'~  # Villager lookup \n\r' +
+			'``` \n\r' +
 			'Remember if you need help message <@531163728553574400>.'
 		);
 	}
