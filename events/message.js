@@ -15,7 +15,15 @@ module.exports = async (client, message) => {
 	//Bot is Mentioned
 	if (message.mentions.has(client.user)) {
 		if (message.mentions.everyone) return;
-		return message.reply(`Hey there! My prefix is \`${client.prefix}\`. Use the \`${client.prefix}help\` command to find out more about me!`);
+		return message.reply(
+			'Hey, how can I help you today?' +
+			'```' +
+			'q! # Event queue commands \n' +
+			'^  # Backup music bot \n' +
+			'~  # Villager lookup \n' +
+			'``` \n' +
+			'To contact staff, message our <@531163728553574400>.'
+		);
 	}
 
 	//Start Command Lookup
