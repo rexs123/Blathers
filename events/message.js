@@ -22,7 +22,7 @@ module.exports = async (client, message) => {
 			'^  # Secondary Music Bot \n' +
 			'~  # Villager Lookup \n' +
 			'``` \n' +
-			'To look up the list of commands, type `{prefix} help` in <#702716081755652136> \n' +
+			'To look up the list of commands, type `{prefix} help` in <#702716081755652136> \n\r' +
 			'If you need help or want to contact our staff for assistance, send a direct message to @Staff Support and we will get back to you as soon as we can.'
 		);
 	}
